@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="numberDecimal"
             app:layout_constraintStart_toEndOf="@+id/originalMassView"
             app:layout_constraintTop_toTopOf="@+id/originalMassView" />
 
@@ -41,42 +41,17 @@
             app:layout_constraintTop_toBottomOf="@+id/originalMassInput"
             tools:layout_editor_absoluteX="146dp" />
 
-        <TextView
-            android:id="@+id/passedNumberLabel"
+        <EditText
+            android:id="@+id/passedNumber"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:inputType="number"
             android:text="0"
-            android:textSize="24sp"
             android:textAlignment="center"
+            android:textSize="24sp"
             app:layout_constraintTop_toBottomOf="@+id/passedLabel"
             tools:layout_editor_absoluteX="146dp" />
-
-        <SeekBar
-            android:id="@+id/halfLifeSelector"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/passedNumberLabel"
-            tools:layout_editor_absoluteX="132dp" />
-
-        <TextView
-            android:id="@+id/minLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="0"
-            app:layout_constraintStart_toStartOf="@+id/halfLifeSelector"
-            app:layout_constraintTop_toBottomOf="@+id/halfLifeSelector" />
-
-        <TextView
-            android:id="@+id/maxLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="10"
-            app:layout_constraintEnd_toEndOf="@+id/halfLifeSelector"
-            app:layout_constraintTop_toBottomOf="@+id/halfLifeSelector" />
 
         <Button
             android:id="@+id/calcButton"
